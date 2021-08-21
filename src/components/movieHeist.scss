@@ -1,0 +1,69 @@
+.container{
+    .navbar{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 80px;
+        &.MuiAppBar-colorPrimary{
+            background-color: #20232a;
+        }
+        .menu-icon{
+            margin-left: 20px;
+            .MuiSvgIcon-root {
+                width: 30px;
+                height: 30px;
+            }
+         
+        }
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        // border: 1px solid red;
+        margin: 50px 0px;
+        .text-input{
+            width: 500px;
+
+        }
+        .search-btn{
+           width: 130px;
+           height: 54px;
+           background-color: lightseagreen;
+           color: #fff;
+        }
+    }
+}
+
+.movies-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card-container{
+        width: 21%;
+        margin-bottom: 20px;
+        .movie-card{
+            background-color: #20232a;
+            color: #fff;
+            .movie-img{
+                height: 500px;
+            }
+            .movie-info{
+                .movie-title{
+                    font-weight: bold;
+                    height: 65px;
+                }
+                .movie-overview{
+                    color: #fff;
+                    height: 120px;
+                    overflow: hidden;
+                }
+            }
+            .add-favorite-btn{
+                background-color: lightseagreen;
+                color: #fff;
+                margin: 0 auto;
+            }
+        }
+    }
+}
