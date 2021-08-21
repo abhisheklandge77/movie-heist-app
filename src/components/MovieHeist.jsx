@@ -20,7 +20,12 @@ class MovieHeist extends React.Component {
   }
 
   getSearchedMovies = () => {
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=cc31d08b0d4b5b3539a406e5af2aec1f&language=en-US&page=1&include_adult=false&query=${this.state.movieName}`;
+    let url = '';
+    if(this.state.movieName === ''){
+      url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=cc31d08b0d4b5b3539a406e5af2aec1f&language=en-US&page=1';
+    }else{
+      url = `https://api.themoviedb.org/3/search/movie?api_key=cc31d08b0d4b5b3539a406e5af2aec1f&language=en-US&page=1&include_adult=false&query=${this.state.movieName}`;
+    }
     fetch(url)
   .then(response => response.json())
   .then(data => this.setState({movieList : data.results}));

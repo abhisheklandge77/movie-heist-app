@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 
 function Search(props) {
     const {onFieldChange,getSearchedMovies} = props;
+    getSearchedMovies();
   return (
     <div className="search">
       <form>
