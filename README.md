@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo
+
+See live demo of movie heist at [https://movie-heist.herokuapp.com/]
+
 ## Available Scripts
 
 In the project directory, you can run:
